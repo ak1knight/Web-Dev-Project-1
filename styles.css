@@ -1,0 +1,81 @@
+.container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAD8D6;
+    color: #561D25;
+    padding: 10px;
+}
+
+body {
+    background-color: #561D25;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    background-color: #CD5334;
+    color: #FAD8D6;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.header h1 {
+    font-size: 1.9em;
+    margin-top: 0px;
+    padding-top: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header h2, .header h3, .header p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.nav {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+  color: #17BEBB;
+  text-decoration: none;
+}
+
+th {
+    background-color: #CD5334;
+    color: #FAD8D6;
+}
+
+td.quarterWidth, th.quarterWidth {
+    width: 1em;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0px -10px 0px -10px;
+}
+
+ul li {
+    border-bottom: 1px solid #CD5334;
+    padding: 0px 10px 10px 10px;
+}
+
+/*ul li h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}*/
