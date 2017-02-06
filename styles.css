@@ -144,6 +144,7 @@ ul li {
     position: relative;
     top: 70%;
     left: 90%;
+    width: 50px;
 }
 
 .movieList .imdbLink span {
