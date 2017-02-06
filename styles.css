@@ -1,3 +1,11 @@
+/*
+* Colors:
+* Background - #561D25
+* Container Background (Light) - #FAD8D6
+* Header - #CD5334
+* Links and Other Highlights - #17BEBB
+*/
+
 .container {
     width: 50%;
     margin-left: auto;
@@ -40,6 +48,10 @@ img {
     padding-bottom: 10px;
 }
 
+.header .noMargin {
+    margin-bottom: 0px;
+}
+
 .nav {
     text-align: center;
     margin-top: 10px;
@@ -76,7 +88,65 @@ ul li {
     padding: 0px 10px 10px 10px;
 }
 
-/*ul li h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}*/
+/*
+* CSS to create the image overlays on the movies page
+*/
+
+#movie1 {
+    background-image: url("images/inception.jpg");
+}
+
+#movie2 {
+    background-image: url("images/meearlandthedyinggirl.jpg");
+}
+
+#movie3 {
+    background-image: url("images/darkknight.png");
+}
+
+#movie4 {
+    background-image: url("images/walle.jpg");
+}
+
+#movie5 {
+    background-image: url("images/interstellar.jpg");
+}
+
+.movieList {
+    height: 400px;
+    margin: 0px -10px 0px -10px;
+    padding: 10px;
+    background-size: 100%;
+    position: relative;
+    border-bottom: 5px #CD5334 solid;
+}
+
+.movieList p {
+    position: relative;
+    background: #FAD8D6;
+    padding: 3px 5px 3px 5px;
+    width: 42%;
+    top: 40%;
+}
+
+.movieList h3 {
+    position: relative;
+    top: 50%;
+}
+
+.movieList h3 span {
+    background: #CD5334;
+    color: #FAD8D6;
+    padding: 3px 5px 3px 5px;
+}
+
+.movieList .imdbLink {
+    position: relative;
+    top: 70%;
+    left: 90%;
+}
+
+.movieList .imdbLink span {
+    background: #FAD8D6;
+    padding: 3px 5px 3px 5px;
+}
