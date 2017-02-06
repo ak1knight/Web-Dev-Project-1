@@ -1,3 +1,11 @@
+/*
+* Colors:
+* Background - #561D25
+* Container Background (Light) - #FAD8D6
+* Header - #CD5334
+* Links and Other Highlights - #17BEBB
+*/
+
 .container {
     width: 50%;
     margin-left: auto;
@@ -80,7 +88,7 @@ ul li {
     padding: 0px 10px 10px 10px;
 }
 
-/**
+/*
 * CSS to create the image overlays on the movies page
 */
 
