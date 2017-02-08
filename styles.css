@@ -91,7 +91,7 @@ img {
 }
 
 .nav li:hover {
-    background-color: #E9C7E5;
+    background-color: #E4C5C3;
 }
 
 li.active {
@@ -100,15 +100,19 @@ li.active {
 }
 
 li.active:hover {
-    background-color: #bc4223;
+    background-color: #BB4C30;
+}
+
+#logo img {
+    width: 45px;
+    height: 45px;
 }
 
 #logo {
-    width: 35px;
-    height: 35px;
+    padding: 5px 6px;
 }
 
-li.noHover:hover {
+#logo:hover {
     background-color: #FAD8D6;
 }
 
