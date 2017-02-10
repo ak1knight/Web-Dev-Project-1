@@ -6,6 +6,10 @@
 * Links and Other Highlights - #17BEBB
 */
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     width: 50%;
     min-width: 920px;
