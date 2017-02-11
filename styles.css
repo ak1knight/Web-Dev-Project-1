@@ -10,16 +10,22 @@
     box-sizing: border-box;
 }
 
-.container {
+.center {
     width: 50%;
-    min-width: 920px;
-    margin-top: 70px;
+    min-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+}
+
+.container {
+    margin-bottom: 100px;
     background-color: #FAD8D6;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 3rem 0;
+}
+
+.footer {
+    text-align: center;
+    color: #FAD8D6;
 }
 
 body {
@@ -34,14 +40,21 @@ img {
 }
 
 .header {
-    background-color: #CD5334;
+    position: relative;
+    background-color: rgba(205,83,52,.8);
     color: #FAD8D6;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    margin-top: 59px;
+    min-height: 30%;
+    padding: 4rem 0;
+}
+
+.headerImg {
+    background-image: url("images/header.jpg");
+    width: 100%;
 }
 
 .header h1 {
+    text-shadow: 2px 2px #992A0E;
     font-size: 1.9em;
     margin-top: 0px;
     padding-top: 21px;
@@ -75,10 +88,6 @@ img {
 
 .nav ul {
     padding: 0;
-    width: 50%;
-    min-width: 920px;
-    margin-left: auto;
-    margin-right: auto;
     overflow: hidden;
 }
 
@@ -96,6 +105,11 @@ img {
 
 .nav li:hover {
     background-color: #E4C5C3;
+}
+
+.nav li:active {
+    background-color: #CD5334;
+    color: #FAD8D6;
 }
 
 li.active {
@@ -180,7 +194,6 @@ ul li {
 
 .movieList {
     height: 400px;
-    margin: 0px -10px 0px -10px;
     padding: 10px;
     background-size: 100%;
     position: relative;
