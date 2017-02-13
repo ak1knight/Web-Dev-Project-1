@@ -1,68 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>How to Publish to Icarus Server</title>
-
     <!--
     Author: Alex Knight
     File: ~ak14513/icarus.html
     Honor Code: I acknowledge that this code represents my own work: Dated 1/29/2017
     -->
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Instructions for setting up FTP connection to Icarus Server" />
     <meta name="keywords" content="FTP server icarus Web Development" />
     <meta name="author" content="Alex Knight" />
-
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-
 </head>
 
 <body>
-    <div class="container">
-    <div class="header">
-        <h1>How to Publish to Icarus Server</h1>
-        <p><span></span></p>
+    <div class="nav">
+        <ul class="center">
+            <li id="logo"><img src="images/favicon.png" /></li>
+            <li><a href="cs2350.html">Portfolio</a></li>
+            <li><a href="hobby.html">My Hobby</a></li>
+            <li><a href="movies.html">Top 5 Movies</a></li>
+            <li class="active"><a href="icarus.html">How to Publish to Icarus</a></li>
+        </ul>
     </div>
-    <div>
-        <h3>Getting Your Password</h3>
-        <p>The first step to gaining access to the Icarus server is finding your username and password. Thankfully the Computer Science department offers a helpful tool that makes finding your login info a snap. Start by heading over to the CS Technical Support page, available <a href="https://icarus.cs.weber.edu/Technical_Support.html?tab=accountInfo">here</a> and click on the "Default Login Tool" button. (See Below)</p>
-        <img src="images/loginbutton.PNG" alt="The Default Login Button" title="The Default Login Button" />
-        <p>After clicking on the "Default Login Tool" button you will be taken to a form where you will enter your first and last name as well as your W number.</p>
-        <img src="images/entername.PNG" alt="Enter Name and W Number" title="Enter Name and W Number" />
-        <p>Once you have entered your correct info a page that looks like the one below will appear. The information in the green column is the information we'll use to login to Icarus through our FTP client. The URL below the table is where your pages will be avaiable once you've published them on Icarus</p>
-        <img src="images/passwords.PNG" alt="Table with Icarus Login Info" title="Table with Icarus Login Info" />
-    </div>
-    <div>
-        <h3>Connecting to the Server Through FTP</h3>
-        <p>Next we'll connect to the server through an FTP client. You can use any client you'd like, but here we'll be using Cyberduck, which is available to download from <a href="https://cyberduck.io">Cyberduck.io</a>.</p>
-        <img src="images/cyberduck.PNG" alt="Download the Cyberduck FTP client" title="Download the Cyberduck FTP client" />
-        <p>Once you've downloaded and installed Cyberduck, open it up. You should see a screen like the one below.</p>
-        <img src="images/cdwindow.PNG" alt="Cyberduck window" title="Cyberduck window" />
-        <p>Start by clicking on the "Open Connection" button which will open the new connection dialog box.</p>
-        <img src="images/openconnection.PNG" alt="The Open Connection Window" title="The Open Connection Window" />
-        <p>On this connection screen, make sure you select SFTP from the dropdown menu. In the server box, put icarus.cs.weber.edu or 137.190.19.20 . Put the username and password you found earlier in their appropriate boxes and make sure the port is 22. You can click Save Password to you don't have to type your password each time, just make sure not to do this on a shared computer. Once everything looks good, click connect.</p>
-        <img src="images/connectioninfo.PNG" alt="Cyberduck Connection Info" title="Cyberduck Connection Info" />
-        <p>This "Unknown Fingerprint" warning may popup, just hit allow.</p>
-        <img src="images/unknownfingerprint.PNG" alt="Unknown Fingerprint Warning" title="Unknown Fingerprint Warning" />
-        <p>If you've entered all your information correctly then you should now be connected to the server and see a "public_html" folder. Any files you put in this folder will be visible when you go to the URL from the Default Login Tool, so put your website files here and you'll be good to go.</p>
-        <img src="images/publichtml.PNG" alt="The public_html folder" title="The public_html folder" />
-    </div>
-        <div>
-            <div class="nav">
-                <a href="hobby.html">My Hobby</a> |
-                <a href="movies.html">Top 5 Movies</a> |
-                <a href="icarus.html">How to Publish to Icarus</a> |
-                <a href="cs2350.html">Portfolio</a>
+    <div class="headerImg">
+        <div class="header">      
+            <div class="center">
+                <h1>How to Publish to Icarus Server</h1>
+                <p><span></span></p>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            <h3>Getting Your Password</h3>
+            <p>The first step to gaining access to the Icarus server is finding your username and password. Thankfully the Computer
+                Science department offers a helpful tool that makes finding your login info a snap. Start by heading over
+                to the CS Technical Support page, available <a href="https://icarus.cs.weber.edu/Technical_Support.html?tab=accountInfo">here</a>                and click on the "Default Login Tool" button. (See Below)</p>
+            <img src="images/loginbutton.PNG" alt="The Default Login Button" title="The Default Login Button" />
+            <p>After clicking on the "Default Login Tool" button you will be taken to a form where you will enter your first
+                and last name as well as your W number.</p>
+            <img src="images/entername.PNG" alt="Enter Name and W Number" title="Enter Name and W Number" />
+            <p>Once you have entered your correct info a page that looks like the one below will appear. The information in
+                the green column is the information we'll use to login to Icarus through our FTP client. The URL below the
+                table is where your pages will be avaiable once you've published them on Icarus</p>
+            <img src="images/passwords.PNG" alt="Table with Icarus Login Info" title="Table with Icarus Login Info" />
+        </div>
+        <div class="center">
+            <h3>Connecting to the Server Through FTP</h3>
+            <p>Next we'll connect to the server through an FTP client. You can use any client you'd like, but here we'll be
+                using Cyberduck, which is available to download from <a href="https://cyberduck.io">Cyberduck.io</a>.</p>
+            <img src="images/cyberduck.PNG" alt="Download the Cyberduck FTP client" title="Download the Cyberduck FTP client" />
+            <p>Once you've downloaded and installed Cyberduck, open it up. You should see a screen like the one below.</p>
+            <img src="images/cdwindow.PNG" alt="Cyberduck window" title="Cyberduck window" />
+            <p>Start by clicking on the "Open Connection" button which will open the new connection dialog box.</p>
+            <img src="images/openconnection.PNG" alt="The Open Connection Window" title="The Open Connection Window" />
+            <p>On this connection screen, make sure you select SFTP from the dropdown menu. In the server box, put icarus.cs.weber.edu
+                or 137.190.19.20 . Put the username and password you found earlier in their appropriate boxes and make sure
+                the port is 22. You can click Save Password to you don't have to type your password each time, just make
+                sure not to do this on a shared computer. Once everything looks good, click connect.</p>
+            <img src="images/connectioninfo.PNG" alt="Cyberduck Connection Info" title="Cyberduck Connection Info" />
+            <p>This "Unknown Fingerprint" warning may popup, just hit allow.</p>
+            <img src="images/unknownfingerprint.PNG" alt="Unknown Fingerprint Warning" title="Unknown Fingerprint Warning" />
+            <p>If you've entered all your information correctly then you should now be connected to the server and see a "public_html"
+                folder. Any files you put in this folder will be visible when you go to the URL from the Default Login Tool,
+                so put your website files here and you'll be good to go.</p>
+            <img src="images/publichtml.PNG" alt="The public_html folder" title="The public_html folder" />
+        </div>
+    </div>
+    <div class="footer center">
+        <p> &copy;2017 Alex Knight </p>
     </div>
 </body>
 

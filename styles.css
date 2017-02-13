@@ -6,19 +6,33 @@
 * Links and Other Highlights - #17BEBB
 */
 
-.container {
+* {
+    box-sizing: border-box;
+}
+
+.center {
     width: 50%;
+    min-width: 940px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container {
+    margin-bottom: 100px;
     background-color: #FAD8D6;
-    color: #561D25;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 3rem 0;
+}
+
+.footer {
+    text-align: center;
+    color: #FAD8D6;
 }
 
 body {
     background-color: #561D25;
+    color: #561D25;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
 }
 
 img {
@@ -26,14 +40,21 @@ img {
 }
 
 .header {
-    background-color: #CD5334;
+    position: relative;
+    background-color: rgba(205,83,52,.8);
     color: #FAD8D6;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    margin-top: 59px;
+    min-height: 30%;
+    padding: 4rem 0;
+}
+
+.headerImg {
+    background-image: url("images/header.jpg");
+    width: 100%;
 }
 
 .header h1 {
+    text-shadow: 2px 2px #992A0E;
     font-size: 1.9em;
     margin-top: 0px;
     padding-top: 21px;
@@ -52,11 +73,70 @@ img {
     margin-bottom: 0px;
 }
 
+/* 
+* Navigation Bar
+*/
+
 .nav {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FAD8D6;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 10;
 }
+
+.nav ul {
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    border-bottom: 0;
+}
+
+.nav li a {
+    display: block;
+    color: inherit;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    background-color: #E4C5C3;
+}
+
+.nav li:active {
+    background-color: #CD5334;
+    color: #FAD8D6;
+}
+
+li.active {
+    background-color: #CD5334;
+    color: #FAD8D6;
+}
+
+li.active:hover {
+    background-color: #BB4C30;
+}
+
+#logo img {
+    width: 45px;
+    height: 45px;
+}
+
+#logo {
+    padding: 5px 6px;
+}
+
+#logo:hover {
+    background-color: #FAD8D6;
+}
+
+/*
+* End Navigation Bar 
+*/
 
 a {
   color: #17BEBB;
@@ -85,7 +165,7 @@ ul {
 
 ul li {
     border-bottom: 1px solid #CD5334;
-    padding: 0px 10px 10px 10px;
+    padding: 10px;
 }
 
 /*
@@ -114,7 +194,6 @@ ul li {
 
 .movieList {
     height: 400px;
-    margin: 0px -10px 0px -10px;
     padding: 10px;
     background-size: 100%;
     position: relative;
@@ -122,15 +201,15 @@ ul li {
 }
 
 .movieList p {
-    position: relative;
+    position: absolute;
     background: #FAD8D6;
     padding: 3px 5px 3px 5px;
     width: 42%;
-    top: 40%;
+    top: 60%;
 }
 
 .movieList h3 {
-    position: relative;
+    position: absolute;
     top: 50%;
 }
 
@@ -141,9 +220,10 @@ ul li {
 }
 
 .movieList .imdbLink {
-    position: relative;
-    top: 70%;
+    position: absolute;
+    top: 90%;
     left: 90%;
+    width: 50px;
 }
 
 .movieList .imdbLink span {
