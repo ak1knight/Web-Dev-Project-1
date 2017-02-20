@@ -80,6 +80,8 @@ aside#contact {
     width: 30%;
     background-color: rgba(86,29,37,0.2);
     padding: 10px;
+    margin: 5px;
+    margin-top: 16px;
 }
 
 aside#contact h1 {
@@ -89,19 +91,16 @@ aside#contact h1 {
 #avatar {
     background-image: url("images/me.jpg");
     border-radius: 50%;
+    vertical-align: middle;
     background-position: center;
     background-size: cover;
-    display:inline-block;
-    vertical-align: middle;
     margin-right: 10px;
-    width: 100px;
     height: 100px;
+    width: 100px;
 }
 
 #avatarTitle {
-    display: inline-block;
     vertical-align: middle;
-    margin: 0;
 }
 
 .avatarHeader {
@@ -110,4 +109,27 @@ aside#contact h1 {
 
 .clearfix {
     clear: left;
+}
+
+.leftColumn {
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 10%;
+}
+
+.rightColumn {
+    vertical-align: top;
+    display: inline-block;
+    width: 85%;
+}
+
+p.rightColumn {
+    padding-left: 10px;
+    border-left: 1px #561D25 solid;
+}
+
+.rightColumn p {
+    padding-left: 10px;
+    border-left: 1px #561D25 solid;
 }
