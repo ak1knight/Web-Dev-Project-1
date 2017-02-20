@@ -1,0 +1,135 @@
+/* 
+* Navigation Bar
+*/
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FAD8D6;
+    box-shadow: 0 4px 8px 0 rgba(86,29,37,0.2),0 6px 20px 0 rgba(86,29,37,0.19);
+    z-index: 10;
+}
+
+nav ul {
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    border-bottom: 0;
+}
+
+nav li a {
+    display: block;
+    color: inherit;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #E4C5C3;
+}
+
+nav li:active {
+    background-color: #CD5334;
+    color: #FAD8D6;
+}
+
+footer {
+    text-align: center;
+    color: #FAD8D6;
+}
+
+/* 
+* Header
+*/
+
+header {
+    position: relative;
+    background-color: rgba(205,83,52,.8);
+    color: #FAD8D6;
+    margin-top: 59px;
+    min-height: 30%;
+    padding: 4rem 0;
+}
+
+header h1 {
+    text-shadow: 2px 2px #992A0E;
+    font-size: 1.9em;
+    margin-top: 0px;
+    padding-top: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header h2, header h3, header p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+header .noMargin {
+    margin-bottom: 0px;
+}
+
+aside#contact {
+    float: right;
+    width: 30%;
+    background-color: rgba(86,29,37,0.2);
+    padding: 10px;
+    margin: 5px;
+    margin-top: 16px;
+}
+
+aside#contact h1 {
+    margin-top: 0;
+}
+
+#avatar {
+    background-image: url("images/me.jpg");
+    border-radius: 50%;
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+#avatarTitle {
+    vertical-align: middle;
+}
+
+.avatarHeader {
+    vertical-align: middle;
+}
+
+.clearfix {
+    clear: left;
+}
+
+.leftColumn {
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 10%;
+}
+
+.rightColumn {
+    vertical-align: top;
+    display: inline-block;
+    width: 85%;
+}
+
+p.rightColumn {
+    padding-left: 10px;
+    border-left: 1px #561D25 solid;
+}
+
+.rightColumn p {
+    padding-left: 10px;
+    border-left: 1px #561D25 solid;
+}
