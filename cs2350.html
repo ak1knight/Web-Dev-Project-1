@@ -33,75 +33,91 @@
 </head>
 
 <body>
-    <div class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="images/favicon.png" /></a>
-                </div>
-                <div class="collapse navbar-collapse" id="topnav-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="cs2350.html">Portfolio</a></li>
-                        <li><a href="hobby.html">My Hobby</a></li>
-                        <li><a href="movies.html">Top 5 Movies</a></li>
-                        <li><a href="icarus.html">How to Publish to Icarus</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/favicon.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="topnav-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="cs2350.html">Portfolio</a></li>
+                    <li><a href="hobby.html">My Hobby</a></li>
+                    <li><a href="movies.html">Top 5 Movies</a></li>
+                    <li><a href="icarus.html">How to Publish to Icarus</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="headerImg">
-        <div class="jumbotron">
-            <div class="container">
-                <h1><strong>CS 2350 Portfolio</strong></h1>
-                <h3><i>Alex Knight</i></h3>
-            </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <h1><strong>CS 2350 Portfolio</strong></h1>
+            <h3><i>Alex Knight</i></h3>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
+    </header>
+    <div id="main-content" class="container">
+        <section class="row main-row">
+            <div class="col-md-7 vcenter text-right md-left">
                 <h2>
-                    Ultra Fast.
+                    <a href="movies.html">Top 5 Movies</a>
                 </h2>
                 <p>
-                    Yarn caches every package it downloads so it never needs to download it again. It also
-            parallelizes operations to maximize resource utilization so install times are
-            faster than ever.
-
+                    Check out my top 5 movies page, which utilizes the power of CSS to create an attractive, interesting layout.
                 </p>
+            </div><!--
+            --><div class="col-md-5 center-block vcenter">
+                <img class="img-responsive" src="images/inception.jpg" alt="Generic placeholder image">
             </div>
-            <div class="col-lg-5">
-                <img class="feature-image img-fluid mx-auto feature-image-speed" src="images/inception.jpg" width="500" height="300" alt="Generic placeholder image">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-7 col-lg-push-5">
+        </section>
+        <section class="row main-row">
+            <div class="col-md-7 col-md-push-5 vcenter">
                 <h2>
-                    Ultra Fast.
+                    <a href="hobby.html">My Hobby</a>
                 </h2>
                 <p>
-                    Yarn caches every package it downloads so it never needs to download it again. It also
-            parallelizes operations to maximize resource utilization so install times are
-            faster than ever.
-
+                    Take a look at my hobby page, where I summarize the college football national championship game, which is my hobby.
                 </p>
+            </div><!--
+            --><div class="col-md-5 col-md-pull-7 center-block vcenter">
+                <img class="img-responsive" src="images/hobbyheader.jpg" alt="Generic placeholder image">
             </div>
-            <div class="col-lg-5 col-lg-pull-7">
-                <img class="feature-image img-fluid mx-auto feature-image-speed" src="images/inception.jpg" width="500" height="300" alt="Generic placeholder image">
+        </section>
+        <section class="row main-row">
+            <div class="col-md-7 vcenter text-right md-left">
+                <h2>
+                    <a href="icarus.html">How to Publish to Icarus</a>
+                </h2>
+                <p>
+                    This page details how to connect to WSU's icarus server using the Cyberduck FTP client.
+                </p>
+            </div><!--
+            --><div class="col-md-5 center-block vcenter">
+                <img class="img-responsive" src="images/cyberduck.PNG" alt="Generic placeholder image">
             </div>
-        </div>
+        </section>
+        <section class="row main-row">
+            <div class="col-md-7 col-md-push-5 vcenter">
+                <h2>
+                    <a href="about.html">About Me</a>
+                </h2>
+                <p>
+                    Take a look at some more info about me.
+                </p>
+            </div><!--
+            --><div class="col-md-5 col-md-pull-7 center-block vcenter">
+                <img class="img-responsive" src="images/me_w.jpg" alt="Generic placeholder image">
+            </div>
+        </section>
     </div>
-    <div class="footer center">
+    <footer class="container-fluid center-text footer">
         <p> &copy;2017 Alex Knight </p>
-    </div>
+    </footer>
 </body>
 
 </html>
