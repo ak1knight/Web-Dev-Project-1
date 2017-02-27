@@ -1,0 +1,6 @@
+linear-gradient
+Multiple Layers in background-image
+text-shadow
+Media Queries
+box-sizing
+rgba()

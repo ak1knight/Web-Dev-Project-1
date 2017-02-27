@@ -17,15 +17,28 @@
     margin-right: auto;
 }
 
-.container {
+.containerMe {
     margin-bottom: 100px;
     background-color: #FAD8D6;
     padding: 3rem 0;
 }
 
+.navigation ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navigation ul li {
+    border-bottom: 1px solid #CD5334;
+    padding: 10px;
+}
+
 .footer {
     text-align: center;
     color: #FAD8D6;
+    background-color: #561D25;
 }
 
 body {
@@ -77,7 +90,7 @@ img {
 * Navigation Bar
 */
 
-.nav {
+.navigation {
     position: fixed;
     top: 0;
     width: 100%;
@@ -86,28 +99,28 @@ img {
     z-index: 10;
 }
 
-.nav ul {
+.navigation ul {
     padding: 0;
     overflow: hidden;
 }
 
-.nav li {
+.navigation li {
     float: left;
     border-bottom: 0;
 }
 
-.nav li a {
+.navigation li a {
     display: block;
     color: inherit;
     padding: 10px 12px;
     text-decoration: none;
 }
 
-.nav li:hover {
+.navigation li:hover {
     background-color: #E4C5C3;
 }
 
-.nav li:active {
+.navigation li:active {
     background-color: #CD5334;
     color: #FAD8D6;
 }
@@ -155,17 +168,6 @@ td.quarterWidth, th.quarterWidth {
 
 table {
     border-collapse: collapse;
-}
-
-ul {
-    padding-left: 0;
-    list-style-type: none;
-    margin: 0px -10px 0px -10px;
-}
-
-ul li {
-    border-bottom: 1px solid #CD5334;
-    padding: 10px;
 }
 
 /*
@@ -230,3 +232,4 @@ ul li {
     background: #FAD8D6;
     padding: 3px 5px 3px 5px;
 }
+

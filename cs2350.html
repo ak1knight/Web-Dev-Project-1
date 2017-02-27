@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
     <title>CS2350 Portfolio</title>
@@ -18,45 +15,109 @@
     <meta name="description" content="List of my CS 2350 pages" />
     <meta name="keywords" content="portfolio web development student" />
     <meta name="author" content="Alex Knight" />
+    <meta name="viewport" content="width:=device-width, initial-scale=1" />
+
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
 </head>
 
 <body>
-    <div class="nav">
-        <ul class="center">
-            <li id="logo"><img src="images/favicon.png" /></li>
-            <li class="active"><a href="cs2350.html">Portfolio</a></li>
-            <li><a href="hobby.html">My Hobby</a></li>
-            <li><a href="movies.html">Top 5 Movies</a></li>
-            <li><a href="icarus.html">How to Publish to Icarus</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
-    </div>
-    <div class="headerImg">
-    <div class="header">
-        <div class="center">
-            <h1>CS 2350 Portfolio</h1>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/favicon.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="topnav-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="cs2350.html">Portfolio</a></li>
+                    <li><a href="hobby.html">My Hobby</a></li>
+                    <li><a href="movies.html">Top 5 Movies</a></li>
+                    <li><a href="icarus.html">How to Publish to Icarus</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <h1><strong>CS 2350 Portfolio</strong></h1>
             <h3><i>Alex Knight</i></h3>
         </div>
+    </header>
+    <div id="main-content" class="container">
+        <section class="row main-row">
+            <div class="col-md-7 vcenter text-right md-left">
+                <h2>
+                    <a href="movies.html">Top 5 Movies</a>
+                </h2>
+                <p>
+                    Check out my top 5 movies page, which utilizes the power of CSS to create an attractive, interesting layout.
+                </p>
+            </div><!--
+            --><div class="col-md-5 center-block vcenter">
+                <img class="img-responsive" src="images/inception.jpg" alt="Generic placeholder image">
+            </div>
+        </section>
+        <section class="row main-row">
+            <div class="col-md-7 col-md-push-5 vcenter">
+                <h2>
+                    <a href="hobby.html">My Hobby</a>
+                </h2>
+                <p>
+                    Take a look at my hobby page, where I summarize the college football national championship game, which is my hobby.
+                </p>
+            </div><!--
+            --><div class="col-md-5 col-md-pull-7 center-block vcenter">
+                <img class="img-responsive" src="images/hobbyheader.jpg" alt="Generic placeholder image">
+            </div>
+        </section>
+        <section class="row main-row">
+            <div class="col-md-7 vcenter text-right md-left">
+                <h2>
+                    <a href="icarus.html">How to Publish to Icarus</a>
+                </h2>
+                <p>
+                    This page details how to connect to WSU's icarus server using the Cyberduck FTP client.
+                </p>
+            </div><!--
+            --><div class="col-md-5 center-block vcenter">
+                <img class="img-responsive" src="images/cyberduck.PNG" alt="Generic placeholder image">
+            </div>
+        </section>
+        <section class="row main-row">
+            <div class="col-md-7 col-md-push-5 vcenter">
+                <h2>
+                    <a href="about.html">About Me</a>
+                </h2>
+                <p>
+                    Take a look at some more info about me.
+                </p>
+            </div><!--
+            --><div class="col-md-5 col-md-pull-7 center-block vcenter">
+                <img class="img-responsive" src="images/me_w.jpg" alt="Generic placeholder image">
+            </div>
+        </section>
     </div>
-    </div>
-    <div class="container">
-        <div class="center">
-            <ul>
-                <li><a href="hobby.html">My Hobby</a></li>
-                <li><a href="movies.html">Top 5 Movies</a></li>
-                <li><a href="icarus.html">How to Publish to Icarus</a></li>
-                <li><a href="cs2350.html">Portfolio</a></li>
-                <li><a href="about.html">About Me</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer center">
+    <footer class="container-fluid center-text footer">
         <p> &copy;2017 Alex Knight </p>
-    </div>
+    </footer>
 </body>
 
 </html>
