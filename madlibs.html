@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="madlib.css" />
 </head>
 
-<body onload="createInputs(); getName()">
+<body>
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -47,7 +47,7 @@
             </div>
             <div class="collapse navbar-collapse" id="topnav-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="cs2350.html">Portfolio</a></li>
+                    <li><a href="cs2350.html">Portfolio</a></li>
                     <li><a href="hobby.html">My Hobby</a></li>
                     <li><a href="movies.html">Top 5 Movies</a></li>
                     <li><a href="icarus.html">How to Publish to Icarus</a></li>
@@ -58,28 +58,60 @@
     </nav>
     <header class="jumbotron">
         <div class="container">
-            <h1><strong id="title">CS 2350 Portfolio</strong></h1>
+            <h1><strong id="title">Welcome to Mad Libs</strong></h1>
         </div>
     </header>
     <div class="container">
         <div class="row">
             <form id="wordInput" class="col-md-6 col-md-offset-3" >
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Noun</span>
+                    <span class="input-group-addon">Adjective</span>
+                    <input type="text" class="form-control" id="doublegrp1" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Noun</span>
+                    <input type="text" class="form-control" id="doublegrp2" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Verb: Past Tense</span>
                     <input type="text" class="form-control" >
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Address</span>
+                    <span class="input-group-addon">Adverb</span>
                     <input type="text" class="form-control" >
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Address</span>
+                    <span class="input-group-addon">Adjective</span>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Noun</span>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Adjective</span>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Verb</span>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Adverb</span>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Verb: Past Tense</span>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Adjective</span>
                     <input type="text" class="form-control" >
                 </div>
                 <input type="button" class="btn btn-primary" value="Submit" onclick="printWords()" />
             </form>
 
-            <p id="wordResult" class="col-md-6 col-md-offset-3" hidden="true">Hello, I'm a <span class="word">noun</span>. I have a <span class="word">adj</span> camera with a <span class="word">adj</span> lens.<br><a href="#" onClick="restore()">Go Back</a></p>
+            <p id="wordResult" class="col-md-6 col-md-offset-3" hidden="true">Today I went to the zoo. I saw a <span class="worddbl1"></span> <span class="worddbl2"></span> jumping up and down in its tree. He <span class="word"></span> <span class="word"></span> through the large tunnel that led to its <span class="word"></span> <span class="word"></span>. I got some peanuts and passed them through the cage to the <span class="worddbl1"></span> <span class="worddbl2"></span> towering above my head. Feeding that animal made me hungry. I went to get a <span class="word"></span> scoop of ice cream. It filled my stomach. Afterwards I had to <span class="word"></span> <span class="word"></span> to catch our bus. When I got home I <span class="word"></span> my mom for a <span class="word"></span> day at the zoo.<br/><br/><a href="#" class="btn btn-primary" onClick="restore()">Go Back</a></p>
         </div>
     </div>
     <footer class="container-fluid center-text footer">
