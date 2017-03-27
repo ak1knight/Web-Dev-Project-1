@@ -1,0 +1,31 @@
+#wordInput {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#wordInput .input-group {
+    margin-bottom: 10px;
+}
+
+#wordInput .input-group .input-group-addon {
+    background-color: #E4C5C3;
+    border-color: #E4C5C3;
+}
+
+#wordInput .input-group .form-control {
+    border-color: #E4C5C3;
+}
+
+.btn-primary {
+    background-color: #CD5334;
+    border-color: #BB4C30;
+}
+
+.btn-primary:hover {
+    background-color: #BB4C30;
+    border-color: #BB4C30;
+}
+
+.word {
+    font-weight: bold;
+}
