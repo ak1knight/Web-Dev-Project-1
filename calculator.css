@@ -33,10 +33,22 @@
     border-color: #BB4C30;
 }
 
-.btn-primary:hover {
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary:active:hover {
     background-color: #BB4C30;
-    border-color: #BB4C30;
+    border-color: #AA3B1F;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
+
+.btn-primary:active:hover {
+    background-color: #AA3B1F;
+    border-color: #992A0D;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 
 footer {
     box-shadow: 0px 500px 0px 500px #561D25;
