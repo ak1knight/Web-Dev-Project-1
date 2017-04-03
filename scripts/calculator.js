@@ -1,6 +1,7 @@
 window.onload = function() {
     var newLine = true;
     var newEquation = true;
+    var isFunc = false;
 
     var numbers = document.forms["calculator"].querySelectorAll(".num");
     var operators = document.forms["calculator"].querySelectorAll(".oper");
@@ -69,7 +70,7 @@ window.onload = function() {
 
     //Add click listeners for function buttons
     equalButton.addEventListener("click", function() {
-        if(inputField.value == "" || newEquation)
+        if(inputField.value == "" && !isFunc || newEquation)
             return;
         
         equation.innerHTML = equation.innerHTML + " " + inputField.value;
@@ -108,7 +109,9 @@ window.onload = function() {
             inputField.value = "";
 
             //Run the equal button click to immediately eval the function
+            isFunc = true;
             equalButton.click();
+            isFunc = false;
         }
     });
 
@@ -126,7 +129,9 @@ window.onload = function() {
             inputField.value = "";
 
             //Run the equal button click to immediately eval the function
+            isFunc = true;
             equalButton.click();
+            isFunc = false;
         }
     });
 
@@ -145,7 +150,9 @@ window.onload = function() {
             inputField.value = "";
 
             //Run the equal button click to immediately eval the function
+            isFunc = true;
             equalButton.click();
+            isFunc = false;
         }
     });
 
