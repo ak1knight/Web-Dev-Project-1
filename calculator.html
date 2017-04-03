@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Calculator</title>
+
+    <!--
+    Author: Alex Knight
+    File: ~ak14513/calculator.html
+    Honor Code: I acknowledge that this code represents my own work: Dated 1/29/2017
+    -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A Calculator Written in JavaScript" />
+    <meta name="keywords" content="portfolio web development student" />
+    <meta name="author" content="Alex Knight" />
+    <meta name="viewport" content="width:=device-width, initial-scale=1" />
+
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <link rel="stylesheet" type="text/css" href="calculator.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/favicon.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="topnav-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="cs2350.html">Portfolio</a></li>
+                    <li><a href="hobby.html">My Hobby</a></li>
+                    <li><a href="movies.html">Top 5 Movies</a></li>
+                    <li><a href="icarus.html">How to Publish to Icarus</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <h1><strong id="title">Calculator</strong></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <form id="calculator" class="col-md-6 col-md-offset-3" >
+                <p id="equation">&nbsp;</p>
+                <input type="text" class="form-control" id="resultField" readonly>
+                <input type="button" class="form-control btn btn-primary" value="Area of Circle">
+                <input type="button" class="form-control btn btn-primary" value="&#120013;&#178;">
+                <input type="button" class="form-control btn btn-primary" value="&#189;">
+                <input type="button" class="form-control btn btn-primary" disabled>
+                <input type="button" class="form-control btn btn-primary" id="clearE" value="CE">
+                <input type="button" class="form-control btn btn-primary" id="clear" value="C">
+                <input type="button" class="form-control btn btn-primary" value="&#8656;">
+                <input type="button" class="form-control btn btn-primary oper" id="divide" value="&#247;">
+                <input type="button" class="form-control btn btn-primary num" value="7">
+                <input type="button" class="form-control btn btn-primary num" value="8">
+                <input type="button" class="form-control btn btn-primary num" value="9">
+                <input type="button" class="form-control btn btn-primary oper" id="multiply" value="&#215;">
+                <input type="button" class="form-control btn btn-primary num" value="4">
+                <input type="button" class="form-control btn btn-primary num" value="5">
+                <input type="button" class="form-control btn btn-primary num" value="6">
+                <input type="button" class="form-control btn btn-primary oper" id="subtract" value="-">
+                <input type="button" class="form-control btn btn-primary num" value="1">
+                <input type="button" class="form-control btn btn-primary num" value="2">
+                <input type="button" class="form-control btn btn-primary num" value="3">
+                <input type="button" class="form-control btn btn-primary oper" id="add" value="+">
+                <input type="button" class="form-control btn btn-primary" id="negative" value="&#177;">
+                <input type="button" class="form-control btn btn-primary num" value="0">
+                <input type="button" class="form-control btn btn-primary num" value=".">
+                <input type="button" class="form-control btn btn-primary" id="equals" value="=">
+            </form>
+        </div>
+    </div>
+    <footer class="container-fluid center-text footer">
+        <p> &copy;2017 Alex Knight </p>
+    </footer>
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>
