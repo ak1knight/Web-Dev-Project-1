@@ -15,40 +15,30 @@ window.onload = function() {
 }
 
 function nextSlide() {
-    images[current].classList.add("hidden");
-    descriptions[current].classList.add("hidden");
-    dots[current].classList.remove("active");
-    headers[current].classList.add("hidden");
-
-    current = (current+1) % images.length;
-
-    images[current].classList.remove("hidden");
-    descriptions[current].classList.remove("hidden");
-    dots[current].classList.add("active");
-    headers[current].classList.remove("hidden");
+    changeSlide((c) => {
+        return (c+1) % images.length;
+    });
 }
 
 function prevSlide() {
-    images[current].classList.add("hidden");
-    descriptions[current].classList.add("hidden");
-    dots[current].classList.remove("active");
-    headers[current].classList.add("hidden");
-
-    current = current == 0 ? images.length - 1 : current - 1;
-
-    images[current].classList.remove("hidden");
-    descriptions[current].classList.remove("hidden");
-    dots[current].classList.add("active");
-    headers[current].classList.remove("hidden");
+    changeSlide((c) => {
+        return c == 0 ? images.length - 1 : c - 1;
+    });
 }
 
 function toSlide(n) {
+    changeSlide((c) => {
+        return n;
+    });
+}
+
+function changeSlide(changeCurrent) {
     images[current].classList.add("hidden");
     descriptions[current].classList.add("hidden");
     dots[current].classList.remove("active");
     headers[current].classList.add("hidden");
 
-    current = n;
+    current = changeCurrent(current);
 
     images[current].classList.remove("hidden");
     descriptions[current].classList.remove("hidden");
