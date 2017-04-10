@@ -1,0 +1,141 @@
+#slider {
+    position: relative;
+}
+
+#slider img {
+    display: block;
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+
+#slider .container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #slider .container {
+        width: 750px;
+        left: calc(50% - (750px / 2))
+    }
+}
+
+@media (min-width: 992px) {
+    #slider .container {
+        width: 970px;
+        left: calc(50% - (970px / 2))
+    }
+}
+
+@media (min-width: 1200px) {
+    #slider .container {
+        width: 1170px;
+        left: calc(50% - (1170px / 2))
+    }
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FAD8D6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+
+    background-color: rgba(86,29,37,0.8);
+}
+
+.prev:hover,
+.next:hover {
+    color: #CD5334;
+    text-decoration-line: none;
+}
+
+.next {
+    right: 0;
+    left: initial;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.dots {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    
+    border-radius: 5px 5px 0 0;
+    padding-left: 6px;
+    padding-right: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(86,29,37,1);
+}
+
+.play {
+    cursor: pointer;
+    background-color: rgba(86,29,37,1);
+    border-radius: 5px 5px 0 0;
+    padding: 6px;
+    margin-left: 10px;
+}
+
+.bottom-container {
+    display: flex;
+    align-self: center;
+    color: #FAD8D6;
+}
+
+.dot.active {
+    color: #CD5334;
+}
+
+#slider .container .description {
+    color: #FAD8D6;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgba(86,29,37,0.8);
+    overflow: auto;
+}
+
+h2 {
+    font-weight: bold;
+    color: #FAD8D6;
+    text-shadow: 2px 2px #BB4C30;
+}
+
+.source {
+    font-size: .5em;
+    color: #E4C5C3;
+}
+
+/*
+#slider {
+    background-image: url("images/slider_test.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+}
+*/
+
+footer {
+    box-shadow: 0px 500px 0px 500px #561D25;
+}
