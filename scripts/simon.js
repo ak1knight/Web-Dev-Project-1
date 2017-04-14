@@ -6,6 +6,8 @@ var round = 1;
 var guessNum = 0;
 //How long each tile is activated when show to the user
 var delay = 1000;
+//Flag for an endless game
+var endless = false;
 
 /**
  * Starts a new Simon game with a particular difficulty
@@ -15,8 +17,9 @@ function startGame(difficulty) {
     var overlay = document.querySelectorAll('.game-overlay');
 
     //Change the delay and number of rounds depending on difficulty
-    var maxRounds = difficulty === 'easy' ? 6 : 10;
+    var maxRounds = difficulty === 'easy' ? 6 : 2;
     delay = difficulty === 'easy' ? 2000 : 500;
+    endless = difficulty === 'endless';
 
     //Generate an array of random tiles and store it in gameOrder
     gameOrder = Array(maxRounds).fill(1).map(function() {
@@ -50,8 +53,15 @@ function simonClick(tile) {
             
             //Check if we've reached the last round, if yes end the game if not have the computer show the next round
             if(round == gameOrder.length) {
-                deactivateBoard();
-                gameOver(true);
+                if(endless) {
+                    let next = Math.floor(Math.random() * (7 - 1)) + 1;
+                    gameOrder.push(next);
+                    deactivateBoard();
+                    setTimeout(showTile,500);
+                } else {
+                    deactivateBoard();
+                    gameOver(true);
+                }
             } else {
                 deactivateBoard();
                 setTimeout(showTile,500);
@@ -128,10 +138,14 @@ function gameOver(won) {
     document.forms["game"].querySelector("#round-text").innerHTML = "&nbsp;";
     document.forms["game"].querySelector("#helper-text").innerHTML = "&nbsp;";
 
+    if(endless) {
+        overlayHeader.innerHTML = "You Reached Round <strong>" + round + "<\strong>";
+    } else {
+        overlayHeader.innerHTML = won ? "You Won!" : "You Lost!";
+    }
+    
     guessNum = 0;
     round = 1;
-
-    overlayHeader.innerHTML = won ? "You Won!" : "You Lost!";
 
     overlay[0].style.visibility = 'visible';
 }
