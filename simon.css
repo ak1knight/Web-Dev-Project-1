@@ -94,11 +94,10 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(86,29,37,0.8);
+    background-color: rgba(250, 216, 214, 0.8);
 }
 
 #game-overlay-header {
-    color: white;
     text-align: center;
 }
 
