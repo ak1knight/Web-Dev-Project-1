@@ -9,6 +9,17 @@ var delay = 1000;
 //Flag for an endless game
 var endless = false;
 
+var sounds = {
+    "1" : "images/sound/1.wav",
+    "2" : "images/sound/2.wav",
+    "3" : "images/sound/3.wav",
+    "4" : "images/sound/4.wav",
+    "5" : "images/sound/5.wav",
+    "6" : "images/sound/6.wav",
+    "miss" : "images/sound/negative.wav",
+    "win" : "images/sound/win.wav"
+}
+
 /**
  * Starts a new Simon game with a particular difficulty
  * @param {string} difficulty 
@@ -17,7 +28,7 @@ function startGame(difficulty) {
     var overlay = document.querySelectorAll('.game-overlay');
 
     //Change the delay and number of rounds depending on difficulty
-    var maxRounds = difficulty === 'easy' ? 6 : 2;
+    var maxRounds = difficulty === 'easy' ? 6 : 11;
     delay = difficulty === 'easy' ? 2000 : 500;
     endless = difficulty === 'endless';
 
@@ -44,6 +55,7 @@ function simonClick(tile) {
     //Make sure the guess is correct, if not game over
     if(guess == gameOrder[guessNum]) {
         guessNum++;
+        new Audio(sounds[guess]).play();
 
         //Check if this guess is the last guess for the round, if yes go to the next round
         if(guessNum == round) {
@@ -60,6 +72,7 @@ function simonClick(tile) {
                     setTimeout(showTile,500);
                 } else {
                     deactivateBoard();
+                    new Audio(sounds["win"]).play();
                     gameOver(true);
                 }
             } else {
@@ -69,6 +82,7 @@ function simonClick(tile) {
         }
     } else {
         deactivateBoard();
+        new Audio(sounds["miss"]).play();
         gameOver(false);
     }
 }
@@ -112,9 +126,12 @@ function showTile() {
         return;
     } else {
         let tile = document.forms["game"].querySelector('[data-tile="'+gameOrder[guessNum]+'"]');
+        let audio = new Audio(sounds[gameOrder[guessNum]]);
 
         //Darken the current tile
         tile.style.filter = 'brightness(50%)';
+
+        audio.play();
 
         //After the delay, return the current tile to normal and then call showTile() for the next tile
         setTimeout(function() {
